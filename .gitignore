@@ -1,22 +1,28 @@
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
 *.war
 *.ear
-*.zip
-*.tar.gz
-*.rar
+*.class
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+/extensions/smartlingcore/extensioninfo.xsd
+/extensions/smartlingcore/eclipsebin
+/extensions/smartlingcore/classes
+/extensions/smartlingcore/gensrc
+/extensions/smartlingcore/build.xml
+/extensions/smartlingcore/resources/beans.xsd
+/extensions/smartlingcore/resources/items.xsd
+/extensions/smartlingcore/resources/smartlingcore/smartlingcore-webtestclasses.xml
+/extensions/smartlingcore/resources/smartlingcore/smartlingcore-testclasses.xml
+/extensions/smartlingcore/fileAbsolutePath
+
+/extensions/smartlinghmc/build.xml
+/extensions/smartlinghmc/eclipsebin
+/extensions/smartlinghmc/classes
+/extensions/smartlinghmc/extensioninfo.xsd
+/extensions/smartlinghmc/resources/beans.xsd
+/extensions/smartlinghmc/resources/items.xsd
+/extensions/smartlinghmc/hmc/bin/smartlinghmchmc.jar
+/extensions/smartlinghmc/resources/smartlinghmc/smartlinghmc-testclasses.xml
+/extensions/smartlinghmc/resources/smartlinghmc/smartlinghmc-webtestclasses.xml
+/extensions/smartlinghmc/hmc/classes
+/extensions/smartlinghmc/hmc/bin
+/extensions/smartlinghmc/hmc/resources/hmc.xsd
+/extensions/smartlinghmc/hmc/testclasses

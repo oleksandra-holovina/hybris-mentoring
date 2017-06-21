@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hybrisconfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="resources/schemas/extensions.xsd">
+    <extensions>
+        <path dir="${HYBRIS_BIN_DIR}" />
+        <extension name="trainingfulfilmentprocess"/>
+        <extension name="trainingcore"/>
+        <extension name="traininginitialdata"/>
+        <extension name="trainingfacades"/>
+        <extension name="trainingtest"/>
+        <extension name="trainingstorefront"/>
+        <extension name="trainingcockpits"/>
+        <extension name="hmc"/>
+        <extension name="trainingorganizations"/>
+<!-- -->
+
+    </extensions>
+</hybrisconfig>

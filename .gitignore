@@ -1,28 +1,42 @@
-*.war
-*.ear
+# Folders to ignore, whatever the place they are
+.metadata
+classes/
+hybris/bin/**/bin
+gensrc/
+ 
+# Folders to ignore at the root of the repository
+log/
+temp/
+data/
+licenses/
+config/tomcat/
+ 
+# filter only custom extension
+bin/*
+!bin/custom/
+
+# Absolute path to ignore
+config/local.properties
+ 
+# Filename patterns to ignore
 *.class
+build.xml
+Generated*.java
+platformhome.properties
+*testclasses.xml
+extensioninfo.xsd
+*hmc.jar
+hmc.xsd
+items.xsd
+beans.xsd
+ruleset.xml
+*.log
+base.properties
 
-/extensions/smartlingcore/extensioninfo.xsd
-/extensions/smartlingcore/eclipsebin
-/extensions/smartlingcore/classes
-/extensions/smartlingcore/gensrc
-/extensions/smartlingcore/build.xml
-/extensions/smartlingcore/resources/beans.xsd
-/extensions/smartlingcore/resources/items.xsd
-/extensions/smartlingcore/resources/smartlingcore/smartlingcore-webtestclasses.xml
-/extensions/smartlingcore/resources/smartlingcore/smartlingcore-testclasses.xml
-/extensions/smartlingcore/fileAbsolutePath
-
-/extensions/smartlinghmc/build.xml
-/extensions/smartlinghmc/eclipsebin
-/extensions/smartlinghmc/classes
-/extensions/smartlinghmc/extensioninfo.xsd
-/extensions/smartlinghmc/resources/beans.xsd
-/extensions/smartlinghmc/resources/items.xsd
-/extensions/smartlinghmc/hmc/bin/smartlinghmchmc.jar
-/extensions/smartlinghmc/resources/smartlinghmc/smartlinghmc-testclasses.xml
-/extensions/smartlinghmc/resources/smartlinghmc/smartlinghmc-webtestclasses.xml
-/extensions/smartlinghmc/hmc/classes
-/extensions/smartlinghmc/hmc/bin
-/extensions/smartlinghmc/hmc/resources/hmc.xsd
-/extensions/smartlinghmc/hmc/testclasses
+#  Addon specific copy folders
+**/_ui/addons
+**/views/addons
+**/tld/addons
+**/tags/addons
+**/messages/addons
+*_bof.jar

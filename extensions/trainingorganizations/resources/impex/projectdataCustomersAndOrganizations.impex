@@ -1,0 +1,38 @@
+INSERT_UPDATE Customer;uid[unique=true];name;
+;1;Tom;
+
+INSERT_UPDATE Organization;code[unique=true];name;faculty;graduation(code);
+;1;KNU;cybernetics;"bachelor";
+
+INSERT_UPDATE Organization;code[unique=true];customer(uid)
+;1;1
+
+
+INSERT_UPDATE Customer;uid[unique=true];name;
+;2;Ted;
+
+INSERT_UPDATE Organization;code[unique=true];name;faculty;graduation(code);
+;20;KNU;cybernetics;"bachelor";
+;21;KNU;cybernetics;"doctor";
+;22;KNU;cybernetics;"candidate";
+
+
+INSERT_UPDATE Organization;code[unique=true];customer(uid)
+;20;2
+;21;2
+;22;2
+
+
+INSERT_UPDATE Customer;uid[unique=true];name;
+;3;Jack;
+
+INSERT_UPDATE Organization;code[unique=true];name;faculty;graduation(code);
+;23;NAU;cybernetics;"bachelor";
+;24;NAU;cybernetics;"doctor";
+;25;NAU;cybernetics;"candidate";
+
+
+INSERT_UPDATE Organization;code[unique=true];customer(uid)
+;23;3
+;24;3
+;25;3

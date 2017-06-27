@@ -1,12 +1,14 @@
 package com.epam.training.attribute_handlers;
 
 
-import com.epam.training.constants.GeneratedTrainingorganizationsConstants;
 import com.epam.training.enums.Graduation;
+import com.epam.training.jalo.Organization;
 import com.epam.training.model.OrganizationModel;
 import de.hybris.platform.core.model.user.CustomerModel;
 import de.hybris.platform.servicelayer.model.attribute.DynamicAttributeHandler;
 
+
+import java.util.Collection;
 import java.util.Comparator;
 
 /**
@@ -22,7 +24,10 @@ public class GraduationAttributeHandler implements DynamicAttributeHandler<Gradu
 
     protected Graduation findSuitableGraduation(CustomerModel customerModel) {
         final Comparator<OrganizationModel> comparator = Comparator.comparingInt(o -> o.getGraduation().ordinal());
-        return customerModel.getOrganizations().stream().max(comparator).get().getGraduation();
+        Collection<OrganizationModel> organizations = customerModel.getOrganizations();
+        return (organizations.size() > 0) ?
+                customerModel.getOrganizations().stream().max(comparator).get().getGraduation()
+                : null;
     }
 
 

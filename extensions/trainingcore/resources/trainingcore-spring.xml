@@ -482,5 +482,13 @@
 	<import resource="/trainingcore/processes/quote/quote-buyer-process-spring.xml"/>
 	<import resource="/trainingcore/processes/quote/quote-salesrep-process-spring.xml"/>
 	<import resource="/trainingcore/processes/quote/quote-seller-approval-process-spring.xml"/>
+
+	<bean id="defaultOrganizationDao" class="com.epam.training.core.dao.impl.DefaultOrganizationDao">
+		<property name="flexibleSearchService" ref="flexibleSearchService"/>
+	</bean>
+
+	<bean id="defaultOrganizationService" class="com.epam.training.core.services.impl.DefaultOrganizationService">
+		<property name="organizationDao" ref="defaultOrganizationDao"/>
+	</bean>
 	
 </beans>

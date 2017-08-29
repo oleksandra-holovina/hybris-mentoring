@@ -65,5 +65,11 @@
     </bean>
 
 	-->
+	<bean class="com.epam.training.data.OrganizationData">
+		<property name="name" type="String"/>
+		<property name="code" type="String"/>
+		<property name="faculty" type="String"/>
+		<property name="graduation" type="com.epam.training.enums.Graduation"/>
+	</bean>
 
 </beans>

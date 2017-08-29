@@ -185,4 +185,11 @@
 	</bean>
 
 	<bean id="genderData" class="com.epam.training.facades.product.data.GenderData" scope="prototype"/>
+
+	<bean id="organizationConverter" class="com.epam.training.facades.converters.OrganizationConverter"/>
+
+	<bean id="userRegisterFacade" class="com.epam.training.facades.DefaultUserRegisterFacade">
+		<property name="organizationService" ref="defaultOrganizationService"/>
+		<property name="organizationConverter" ref="organizationConverter"/>
+	</bean>
 </beans>

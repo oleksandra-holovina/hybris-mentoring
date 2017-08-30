@@ -67,6 +67,9 @@
                     <persistence type="property"/>
                     <modifiers optional="false"  initial="true"/>
                 </attribute>
+                <attribute qualifier="organizationImage" type="MediaContainer" >
+                    <persistence type="property"/>
+                </attribute>
             </attributes>
         </itemtype>
 

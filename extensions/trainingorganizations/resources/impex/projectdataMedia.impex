@@ -1,0 +1,5 @@
+$catalogVersion=catalogVersion(catalog(id[default='Default']),version[default='Staged'])[unique=true];
+
+INSERT_UPDATE Media;code[unique=true];$catalogVersion; mime;realfilename;mediaFormat(qualifier);@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator][forceWrite=true];
+;KNU;;image/jpeg;nature_work.jpg;Default-WorkingFormat;jar:com.epam.training.jalo.TrainingorganizationsManager&/trainingorganizations/media/nature_work.jpg;
+;NAU;;image/jpeg;city_work.jpg;Default-WorkingFormat;jar:com.epam.training.jalo.TrainingorganizationsManager&/trainingorganizations/media/city_work.jpg;
